@@ -531,11 +531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS\\CAS.csproj",
+      "projectUniqueName": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj",
       "projectName": "CAS",
-      "projectPath": "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS\\CAS.csproj",
+      "projectPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj",
       "packagesPath": "C:\\Users\\ogallardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS\\obj\\",
+      "outputPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

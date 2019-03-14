@@ -1002,11 +1002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS.iOS\\CAS.iOS.csproj",
+      "projectUniqueName": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS.iOS\\CAS.iOS.csproj",
       "projectName": "CAS.iOS",
-      "projectPath": "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS.iOS\\CAS.iOS.csproj",
+      "projectPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS.iOS\\CAS.iOS.csproj",
       "packagesPath": "C:\\Users\\ogallardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS.iOS\\obj\\",
+      "outputPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1023,8 +1023,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS\\CAS.csproj": {
-              "projectPath": "C:\\Proyects\\VisualStudio\\CRM_Alerts_Local\\CAS\\CAS\\CAS\\CAS.csproj"
+            "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj": {
+              "projectPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj"
             }
           }
         }
