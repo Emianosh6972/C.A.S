@@ -1,6 +1,11 @@
 CAS
-System.Runtime
 FormsViewGroup
+GalaSoft.MvvmLight
+GalaSoft.MvvmLight.Platform
+Newtonsoft.Json
+Plugin.Connectivity.Abstractions
+Plugin.Connectivity
+System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
@@ -24,12 +29,5 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-CommonServiceLocator
-GalaSoft.MvvmLight
-GalaSoft.MvvmLight.Extras
-GalaSoft.MvvmLight.Platform
-Newtonsoft.Json
-Plugin.Connectivity.Abstractions
-Plugin.Connectivity
 netstandard
 System.Reflection.Extensions

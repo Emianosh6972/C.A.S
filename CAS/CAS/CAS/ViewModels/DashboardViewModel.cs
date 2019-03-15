@@ -1,11 +1,9 @@
 ﻿namespace CAS.ViewModels
 {
-    using System;
+    using Models;
+    using Services;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    using System.Text;
-    using Services;
-    using Models;
     using Xamarin.Forms;
 
     public class DashboardViewModel : BaseViewModel
@@ -15,14 +13,14 @@
         #endregion
 
         #region Atributos 
-        private ObservableCollection<API_Resources> dash;
+        private ObservableCollection<onTrack> crm;
         #endregion
 
         #region Propiedades
-        public ObservableCollection<API_Resources> Dash
+        public ObservableCollection<onTrack> CRM
         {
-            get { return this.dash; }
-            set { this.SetValue(ref this.dash, value); }
+            get { return this.crm; }
+            set { this.SetValue(ref this.crm, value); }
         }
         #endregion
         
@@ -30,24 +28,23 @@
         public DashboardViewModel()
         {
             this.apiService = new ApiService();
-            this.LoadMenu();
+            this.LoadCRM();
         }
         #endregion
 
         #region Metodos
-        private async void LoadMenu()
+        private async void LoadCRM()
         {
-            var response = await this.apiService.Post<Dash>("https://control.airam.com.mx/api/");
+            var response = await this.apiService.Post<onTrack>("https://control.airam.com.mx/api");
 
-            if (response.IsSuccess)
+            if (!response.IsSuccess)
             {
                 await Application.Current.MainPage.DisplayAlert("Error", response.Message, "Aceptar");
                 return;
             }
 
-            var list = (List<API_Resources>)response.Result;
-            this.Dash = new ObservableCollection<API_Resources>(list);
-
+            var api_list = (List<onTrack>)response.Result;
+            this.CRM = new ObservableCollection<onTrack>(api_list);
         }
         #endregion
     }
