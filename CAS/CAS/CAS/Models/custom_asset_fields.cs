@@ -11,5 +11,16 @@
         [JsonProperty(PropertyName = "name")] public string Name { get; set; }
         [JsonProperty(PropertyName = "description")] public string Description { get; set; }
         [JsonProperty(PropertyName = "options")] public string Options { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Type})" +
+                $"({Name})" +
+                $"({Description})" +
+                $"({Options})";
+        }
     }
 }

@@ -11,5 +11,16 @@
         [JsonProperty(PropertyName = "clients")] public clients[] Clients { get; set; }
         [JsonProperty(PropertyName = "name")] public string Name { get; set; }
         [JsonProperty(PropertyName = "content")] public string Content { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Categoryid})" +
+                $"({Clients})" +
+                $"({Name})" +
+                $"({Content})";
+        }
     }
 }

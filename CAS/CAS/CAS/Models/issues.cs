@@ -16,5 +16,21 @@
         [JsonProperty(PropertyName = "name")] public string Name { get; set; }
         [JsonProperty(PropertyName = "description")] public string Description { get; set; }
         [JsonProperty(PropertyName = "duedate")] public DateTime Duedate { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Clientid})" +
+                $"({Assetid})" +
+                $"({Projectid})" +
+                $"({Adminid})" +
+                $"({Issuetype})" +
+                $"({Priority})" +
+                $"({Name})" +
+                $"({Description})" +
+                $"({Duedate})";
+        }
     }
 }

@@ -9,5 +9,14 @@
         [JsonProperty(PropertyName = "id")] public int Id { get; set; }
         [JsonProperty(PropertyName = "id")] public string Name { get; set; }
         [JsonProperty(PropertyName = "clientid")] public int Clientid { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Name})" +
+                $"({Clientid})";
+        }
     }
 }

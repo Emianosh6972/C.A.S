@@ -1,9 +1,7 @@
 ﻿namespace CAS.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using Newtonsoft.Json;
+    using System;
     public class files
     {
         [JsonProperty(PropertyName = "id")] public int Id { get; set; }
@@ -13,5 +11,18 @@
         [JsonProperty(PropertyName = "Ticketreplyid")] public int Ticketreplyid { get; set; }
         [JsonProperty(PropertyName = "name")] public string Name { get; set; }
         [JsonProperty(PropertyName = "file")] public files[] File { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Clientid})" +
+                $"({Projectid})" +
+                $"({Assetid})" +
+                $"({Ticketreplyid})" +
+                $"({Name})" + 
+                $"({File})";
+        }
     }
 }

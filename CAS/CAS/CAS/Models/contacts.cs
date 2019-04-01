@@ -13,5 +13,18 @@
         [JsonProperty(PropertyName = "address")] public string Address { get; set; }
         [JsonProperty(PropertyName = "webaddress")] public string Webaddress { get; set; }
         [JsonProperty(PropertyName = "notes")] public string Notes { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Name})" +
+                $"({Email})" +
+                $"({Phone})" +
+                $"({Address})" +
+                $"({Webaddress})" +
+                $"({Notes})";
+        }
     }
 }

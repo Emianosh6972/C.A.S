@@ -15,5 +15,20 @@
         [JsonProperty(PropertyName = "email")] public Boolean Email { get; set; }
         [JsonProperty(PropertyName = "sms")] public Boolean Sms { get; set; }
         [JsonProperty(PropertyName = "status")] public string Status { get; set; }          // up, down, empty
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Hostid})" +
+                $"({Name})" +
+                $"({Type})" +
+                $"({Port})" +
+                $"({Monitoring})" +
+                $"({Email})" +
+                $"({Sms})" +
+                $"({Status})";
+        }
     }
 }

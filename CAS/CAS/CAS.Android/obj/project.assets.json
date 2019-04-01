@@ -981,11 +981,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS.Android\\CAS.Android.csproj",
+      "projectUniqueName": "C:\\Proyects\\Visual Studio\\C.A.S\\CAS\\CAS\\CAS.Android\\CAS.Android.csproj",
       "projectName": "CAS.Android",
-      "projectPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS.Android\\CAS.Android.csproj",
+      "projectPath": "C:\\Proyects\\Visual Studio\\C.A.S\\CAS\\CAS\\CAS.Android\\CAS.Android.csproj",
       "packagesPath": "C:\\Users\\ogallardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS.Android\\obj\\",
+      "outputPath": "C:\\Proyects\\Visual Studio\\C.A.S\\CAS\\CAS\\CAS.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1002,8 +1002,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj": {
-              "projectPath": "C:\\Proyects\\VisualStudio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj"
+            "C:\\Proyects\\Visual Studio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj": {
+              "projectPath": "C:\\Proyects\\Visual Studio\\C.A.S\\CAS\\CAS\\CAS\\CAS.csproj"
             }
           }
         }

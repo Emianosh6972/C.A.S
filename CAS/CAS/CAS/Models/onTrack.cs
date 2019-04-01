@@ -1,14 +1,13 @@
 ﻿namespace CAS.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using Newtonsoft.Json;
-    public class onTrack
+    using System.Collections.Generic;
+
+    public class onTrack 
     {
         [JsonProperty(PropertyName = "status")] public int Status { get; set; }
         [JsonProperty(PropertyName = "status_message")] public string Status_message { get; set; }
-
+       
         [JsonProperty(PropertyName = "asset_categories")] public List<asset_categories> Asset_categories { get; set; }
         [JsonProperty(PropertyName = "assets")] public List<assets> Assets { get; set; }
         [JsonProperty(PropertyName = "authenticate")] public List<authenticate> Authenticate { get; set; }
@@ -18,7 +17,7 @@
         [JsonProperty(PropertyName = "contacts")] public List<contacts> Contacts { get; set; }
         [JsonProperty(PropertyName = "credentials")] public List<credentials> Credentials { get; set; }
         [JsonProperty(PropertyName = "custom_assets_fields")] public List<custom_asset_fields> Custom_asset_fields { get; set; }
-        [JsonProperty(PropertyName = "assets")] public List<custom_license_fields> Custom_license_fields { get; set; }
+        [JsonProperty(PropertyName = "custom_license_fields")] public List<custom_license_fields> Custom_license_fields { get; set; }
         [JsonProperty(PropertyName = "files")] public List<files> Files { get; set; }
         [JsonProperty(PropertyName = "issues")] public List<issues> Issues { get; set; }
         [JsonProperty(PropertyName = "kb_articles")] public List<kb_articles> Kb_articles { get; set; }

@@ -24,5 +24,29 @@
         [JsonProperty(PropertyName = "locationid")] public int Locationid { get; set; }
         [JsonProperty(PropertyName = "customfields")] public custom_asset_fields[] Customfields { get; set; }
         [JsonProperty(PropertyName = "qrvalue")] public string Qrvalue { get; set; }
+
+        public override string ToString()
+        {
+            return 
+                $" " +
+                $"({Id}) " +
+                $"({Categoryid}) " +
+                $"({Adminid})" +
+                $"({Clientid})" +
+                $"({Userid})" +
+                $"({Manufacturerid})" +
+                $"({Modelid})" +
+                $"({Supplierid})" +
+                $"({Statusid})" +
+                $"({Purchase_date})" +
+                $"({Warranty_months})" +
+                $"({Tag})" +
+                $"({Name})" +
+                $"({Serial})" +
+                $"({Notes})" +
+                $"({Locationid})" +
+                $"({Customfields})" +
+                $"({Qrvalue})";
+        }
     }
 }

@@ -5,6 +5,7 @@
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using Xamarin.Forms;
+    using System.Runtime;
 
     public class DashboardViewModel : BaseViewModel
     {
@@ -35,7 +36,18 @@
         #region Metodos
         private async void LoadCRM()
         {
-            var response = await this.apiService.Post<onTrack>("https://control.airam.com.mx/api");
+            var connection = await this.apiService.CheckConnection();
+
+            if (!connection.IsSuccess)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", connection.Message, "Aceptar");
+
+                await Application.Current.MainPage.Navigation.PopAsync();
+
+                return;
+            }
+
+            var response = await this.apiService.Post<onTrack>("https://control.airam.com.mx/api/");
 
             if (!response.IsSuccess)
             {

@@ -1,28 +1,14 @@
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.deps.json
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.dll
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.csprojAssemblyReference.cache
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.csproj.CoreCompileInputs.cache
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.AssemblyInfoInputs.cache
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.AssemblyInfo.cs
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.pdb
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.dll
-C:\Proyects\VisualStudio\CRM_Alerts_Local\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.pdb
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.deps.json
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.dll
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.pdb
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.csprojAssemblyReference.cache
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.csproj.CoreCompileInputs.cache
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.AssemblyInfoInputs.cache
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.AssemblyInfo.cs
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.dll
-C:\Proyects\VisualStudio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.pdb
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.deps.json
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.dll
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\bin\Debug\netstandard2.0\CAS.pdb
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.csprojAssemblyReference.cache
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.csproj.CoreCompileInputs.cache
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.AssemblyInfoInputs.cache
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.AssemblyInfo.cs
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.dll
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\CAS.pdb
+C:\Proyects\Visual Studio\C.A.S\CAS\CAS\CAS\obj\Debug\netstandard2.0\XamlC.stamp

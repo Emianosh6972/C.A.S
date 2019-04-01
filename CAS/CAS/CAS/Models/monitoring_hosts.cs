@@ -11,5 +11,16 @@
         [JsonProperty(PropertyName = "name")] public string Name { get; set; }
         [JsonProperty(PropertyName = "address")] public string Address { get; set; }
         [JsonProperty(PropertyName = "status")] public string Status { get; set; }         // up, down, can be empty
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Clientid})" +
+                $"({Name})" +
+                $"({Address})" +
+                $"({Status})";
+        }
     }
 }

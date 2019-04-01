@@ -17,5 +17,22 @@
         [JsonProperty(PropertyName = "serial")] public string Serial { get; set; }
         [JsonProperty(PropertyName = "notes")] public string Notes { get; set; }
         [JsonProperty(PropertyName = "customfields")] public custom_license_fields[] Customfields { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"" +
+                $"({Id})" +
+                $"({Clientid})" +
+                $"({Statusid})" +
+                $"({Categoryid})" +
+                $"({Supplierid})" +
+                $"({Seats})" +
+                $"({Tag})" +
+                $"({Name})" +
+                $"({Serial})" +
+                $"({Notes})" +
+                $"({Customfields})";
+        }
     }
 }

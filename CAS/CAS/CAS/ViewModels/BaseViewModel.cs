@@ -1,9 +1,7 @@
 ﻿namespace CAS.ViewModels
 {
-    using System;
-    using System.Text;
-    using System.ComponentModel;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.Runtime.CompilerServices;
     public class BaseViewModel : INotifyPropertyChanged
     {
