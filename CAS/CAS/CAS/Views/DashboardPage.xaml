@@ -8,27 +8,21 @@
     <ContentPage.Content>
         <StackLayout Padding="5" BindingContext="{Binding Dash}">
 
-            <ListView BackgroundColor="Silver" HasUnevenRows="true" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}" ItemsSource="{Binding CRM}" SeparatorVisibility="None" RefreshCommand="{Binding RefreshCommand}">
+            <ListView BackgroundColor="Silver" HasUnevenRows="true" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}" ItemsSource="{Binding onTrack}" SeparatorVisibility="None" RefreshCommand="{Binding RefreshCommand}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Frame CornerRadius="20" HasShadow="true" Margin="5">
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding SelectLandCommand}"/>
-                            </Frame.GestureRecognizers>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <StackLayout Grid.Column="1" VerticalOptions="Center">
-                                    <Label FontAttributes="Bold" FontSize="Medium" Text="{Binding Name}" TextColor="Black"> </Label>
-                                    <Label Text="{Binding Capital}" TextColor="Black"> </Label>
-                                </StackLayout>
-                                    <Image Grid.Column="2" HorizontalOptions="End" Source="ic_chevron_right"></Image>
-                            </Grid>
-                        </Frame>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0" VerticalOptions="Center">
+                                <Label FontAttributes="Bold" FontSize="Medium" Text="{Binding Name}" TextColor="Black"></Label>
+                                <Label Text="{Binding Capital}" TextColor="Black"></Label>
+                            </StackLayout>
+                            <Image Grid.Column="2" HorizontalOptions="End" Source="ic_chevron_right"></Image>
+                        </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

@@ -2372,6 +2372,9 @@ namespace CAS.Droid
 			// aapt resource value: 0x7F090055
 			public const int ic_audiotrack_light = 2131296341;
 			
+			// aapt resource value: 0x7F010003
+			public const int ic_chevron_right = 2130771971;
+			
 			// aapt resource value: 0x7F090056
 			public const int ic_dialog_close_dark = 2131296342;
 			

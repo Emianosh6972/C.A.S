@@ -6,6 +6,8 @@
     using System.Collections.ObjectModel;
     using Xamarin.Forms;
     using System.Runtime;
+    using System.Windows.Input;
+    using GalaSoft.MvvmLight.Command;
 
     public class DashboardViewModel : BaseViewModel
     {
@@ -14,14 +16,22 @@
         #endregion
 
         #region Atributos 
-        private ObservableCollection<onTrack> crm;
+        private ObservableCollection<clients> clientes;
+
+        private bool isRefreshing;
         #endregion
 
         #region Propiedades
-        public ObservableCollection<onTrack> CRM
+        public ObservableCollection<clients> Clientes
         {
-            get { return this.crm; }
-            set { this.SetValue(ref this.crm, value); }
+            get { return this.clientes; }
+            set { this.SetValue(ref this.clientes, value); }
+        }
+
+        public bool IsRefreshing
+        {
+            get { return this.isRefreshing; }
+            set { this.SetValue(ref this.isRefreshing, value); }
         }
         #endregion
         
@@ -36,28 +46,48 @@
         #region Metodos
         private async void LoadCRM()
         {
-            var connection = await this.apiService.CheckConnection();
 
-            if (!connection.IsSuccess)
-            {
-                await Application.Current.MainPage.DisplayAlert("Error", connection.Message, "Aceptar");
+            //var connection = await this.apiService.CheckConnection();
 
-                await Application.Current.MainPage.Navigation.PopAsync();
+            //if (!connection.IsSuccess)
+            //{
+            //    this.IsRefreshing = false;
 
-                return;
-            }
+            //    await Application.Current.MainPage.DisplayAlert("Error", connection.Message, "Aceptar");
 
-            var response = await this.apiService.Post<onTrack>("https://control.airam.com.mx/api/");
+            //    await Application.Current.MainPage.Navigation.PopAsync();
+
+            //    return;
+            //}
+
+            var response = await this.apiService.Post<OtClients>("https://control.airam.com.mx/api/");
 
             if (!response.IsSuccess)
             {
+                this.IsRefreshing = false;
                 await Application.Current.MainPage.DisplayAlert("Error", response.Message, "Aceptar");
                 return;
             }
 
-            var api_list = (List<onTrack>)response.Result;
-            this.CRM = new ObservableCollection<onTrack>(api_list);
+            //this.IsRefreshing = true;
+
+            var api_list = (List<clients>)response.Result;
+
+            this.Clientes = new ObservableCollection<clients>(api_list);
+
         }
+        #endregion
+
+        #region Comandos
+
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadCRM);
+            }
+        }
+
         #endregion
     }
 }

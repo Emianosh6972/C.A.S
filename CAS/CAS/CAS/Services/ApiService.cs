@@ -50,9 +50,9 @@
                 {
                     var values = new Dictionary<string, string>
                     {
-                        {"key", "bqEJqQW02MGo0qZg5kVa40Hh6a07WQtiWZR83B5uEqRdjuidTSKe8Mgk47kGAEJU" },
-                        {"resource", "clients" },
-                        {"method", "get" }
+                        {"key", "bqEJqQW02MGo0qZg5kVa40Hh6a07WQtiWZR83B5uEqRdjuidTSKe8Mgk47kGAEJU"},
+                        {"resource", "clients"},
+                        {"method", "get"}
                     };
 
                     var content = new FormUrlEncodedContent(values);
@@ -65,37 +65,26 @@
                     {
                         return new Response
                         {
-                            Message = resultJSON.ToString(),
-                        };
-                    }
-                    
-                    onTrack result = JsonConvert.DeserializeObject<onTrack>(resultJSON);
-
-                    return new Response
-                    {
-                        Message = resultJSON.ToString(),
-                    };
-
-                    /*
-                     if(!response.IsSuccessStatusCode || !response.Equals(200))
-                    {
-                        return new Response
-                        {
                             IsSuccess = false,
                             Message = resultJSON,
                         };
-                    } 
-                     
-                    var stringJson = JsonConvert.DeserializeObject<ObservableCollection<onTrack>>(resultJSON);
+                    }
 
-                    return new Response
-                    {
-                        IsSuccess = true,
-                        Message = "Ok"
-                        Result = stringJson,
-                    };
-                    */
+                    OtClients result = JsonConvert.DeserializeObject<OtClients>(resultJSON);
 
+                    if(result.Status==1)
+                        return new Response
+                        {
+                            IsSuccess = true,
+                            Result = result.Clients,
+                        };
+                    else
+                        return new Response
+                        {
+                            IsSuccess = false,
+                            Message = result.Status_message,
+                        };
+                    
                 }
                 catch (Exception ex_string)
                 {
